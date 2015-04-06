@@ -1,15 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>maven.ear.example</groupId>
-	<artifactId>maven-ear-example</artifactId>
+	
+	<groupId>com.github.jamie3</groupId>
+	<artifactId>websphere-mdb</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	
 	<modules>
-		<module>maven-ear-example-jar</module>
-		<module>maven-ear-example-ejb</module>
-		<module>maven-ear-example-ear</module>
+		<module>websphere-mdb-jar</module>
+		<module>websphere-mdb-ejb</module>
+		<module>websphere-mdb-ear</module>
 	</modules>
 		
 	<build>

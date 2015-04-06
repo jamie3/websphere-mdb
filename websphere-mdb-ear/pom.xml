@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.github.jamie3</groupId>
+		<version>1.0.0</version>
+		<artifactId>websphere-mdb</artifactId>
+	</parent>
+	
+	<artifactId>websphere-mdb-ear</artifactId>
+	<packaging>ear</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.github.jamie3</groupId>
+			<artifactId>websphere-mdb-ejb</artifactId>
+			<version>1.0.0</version>
+			<type>ejb</type>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.10</version>
+				<configuration>
+					<version>6</version>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<!-- <generateApplicationXml>true</generateApplicationXml> -->
+					<!-- <applicationXml>${basedir}/src/main/application/application.xml</applicationXml> -->
+					<!-- <includeLibInApplicationXml>true</includeLibInApplicationXml> -->
+					
+					<skinnyWars>true</skinnyWars>
+					<modules>
+						<ejbModule>
+							<groupId>maven.ear.example</groupId>
+							<artifactId>maven-ear-example-ejb</artifactId>
+						</ejbModule>
+						<jarModule>
+							<groupId>maven.ear.example</groupId>
+							<artifactId>maven-ear-example-jar</artifactId>
+						</jarModule>
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<repositories>
+		<repository>
+			<id>repository.jboss.org-public</id>
+			<name>JBoss.org Maven repository</name>
+			<url>https://repository.jboss.org/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+</project>
