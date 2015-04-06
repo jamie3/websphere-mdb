@@ -1,4 +1,4 @@
-package example.jar;
+package jar;
 
 public class Echo {
 
