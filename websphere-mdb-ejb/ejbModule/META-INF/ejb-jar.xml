@@ -4,7 +4,7 @@
   <enterprise-beans >
   	<message-driven>
   		<ejb-name>MyMDB</ejb-name>
-  		<ejb-class>example.ejb.MyMDB</ejb-class>
+  		<ejb-class>ejb.MyMDB</ejb-class>
   	</message-driven>
   	
 </enterprise-beans>

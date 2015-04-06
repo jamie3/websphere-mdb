@@ -28,19 +28,14 @@
 				<configuration>
 					<version>6</version>
 					<defaultLibBundleDir>lib</defaultLibBundleDir>
-					<!-- <generateApplicationXml>true</generateApplicationXml> -->
-					<!-- <applicationXml>${basedir}/src/main/application/application.xml</applicationXml> -->
-					<!-- <includeLibInApplicationXml>true</includeLibInApplicationXml> -->
-					
-					<skinnyWars>true</skinnyWars>
 					<modules>
 						<ejbModule>
-							<groupId>maven.ear.example</groupId>
-							<artifactId>maven-ear-example-ejb</artifactId>
+							<groupId>com.github.jamie3</groupId>
+							<artifactId>websphere-mdb-ejb</artifactId>
 						</ejbModule>
 						<jarModule>
-							<groupId>maven.ear.example</groupId>
-							<artifactId>maven-ear-example-jar</artifactId>
+							<groupId>com.github.jamie3</groupId>
+							<artifactId>websphere-mdb-jar</artifactId>
 						</jarModule>
 					</modules>
 				</configuration>

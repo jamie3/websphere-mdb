@@ -1,4 +1,6 @@
-package example.ejb;
+package ejb;
+
+import jar.Echo;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.ActivationConfigProperty;
@@ -7,12 +9,10 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.TextMessage;
 
-import example.jar.Echo;
-
 /**
  * Session Bean implementation class MySessionBean
  */
-@MessageDriven(activationConfig = { @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue") }, mappedName = "jms/ENSQueue")
+@MessageDriven(activationConfig = { @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue") }, mappedName = "jms/SomeQueue")
 public class MyMDB implements javax.jms.MessageListener {
 
 	Echo echo;
