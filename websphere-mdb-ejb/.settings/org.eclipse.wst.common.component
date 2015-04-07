@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="maven-ear-example-ejb">
-        <wb-resource deploy-path="/" source-path="/ejbModule"/>
-        <wb-resource deploy-path="/" source-path="/.apt_generated"/>
-        <property name="java-output-path" value="/maven-ear-example-ejb/ejbModule"/>
-        <property name="ClientProject" value="maven-ear-example-ejbClient"/>
-        <property name="ClientJARURI" value="maven-ear-example-ejbClient.jar"/>
-    </wb-module>
-</project-modules>
